@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ldl56HhtN3riigK8vb/sTHNuFBKupc4HC1SWG/cA1Iz5EZ4iG2EHeol65Of8qNBbuUtiP2UtXKsOXNm/fdJwOw==",
+  "success": true,
+  "projectFilePath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Presentation/UlukunShopAPI.API/UlukunShopAPI.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/tascagdas/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
