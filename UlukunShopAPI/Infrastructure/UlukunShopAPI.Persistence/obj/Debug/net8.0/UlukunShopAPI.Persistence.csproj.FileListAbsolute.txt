@@ -16,3 +16,5 @@
 /Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/obj/Debug/net8.0/refint/UlukunShopAPI.Persistence.dll
 /Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/obj/Debug/net8.0/UlukunShopAPI.Persistence.pdb
 /Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/obj/Debug/net8.0/ref/UlukunShopAPI.Persistence.dll
+/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/bin/Debug/net8.0/UlukunShopAPI.Persistence.runtimeconfig.json
+/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/obj/Debug/net8.0/UlukunShopAPI.Persistence.genruntimeconfig.cache
