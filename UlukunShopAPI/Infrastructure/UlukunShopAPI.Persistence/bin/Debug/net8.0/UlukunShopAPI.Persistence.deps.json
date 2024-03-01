@@ -656,6 +656,7 @@
       "System.Threading.Channels/6.0.0": {},
       "UlukunShopAPI.Application/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.1.24081.2",
           "UlukunShopAPI.Domain": "1.0.0"
         },
         "runtime": {
