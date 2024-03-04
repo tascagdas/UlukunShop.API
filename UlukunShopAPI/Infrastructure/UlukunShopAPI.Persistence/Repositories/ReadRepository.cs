@@ -6,9 +6,10 @@ using UlukunShopAPI.Persistence.Contexts;
 
 namespace UlukunShopAPI.Persistence.Repositories;
 
-public class ReadRepository<T>:IReadRepository<T> where T : BaseEntity
+public class ReadRepository<T> : IReadRepository<T> where T : BaseEntity
 {
     private readonly UlukunAPIDbContext _context;
+
     public ReadRepository(UlukunAPIDbContext context)
     {
         _context = context;
@@ -23,9 +24,8 @@ public class ReadRepository<T>:IReadRepository<T> where T : BaseEntity
         => Table.Where(method);
 
     public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
-        =>await Table.FirstOrDefaultAsync(method);
+        => await Table.FirstOrDefaultAsync(method);
 
     public async Task<T> GetByIdAsync(string id)
-        =>await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
-    
+        => await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
 }
