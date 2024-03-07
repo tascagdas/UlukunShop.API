@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UlukunShopAPI.Application.Repositories;
+using UlukunShopAPI.Domain.Entities;
 
 
 namespace UlukunShopAPI.API.Controllers
@@ -20,7 +21,7 @@ namespace UlukunShopAPI.API.Controllers
         }
 
         [HttpGet]
-        public async void Get()
+        public async Task Get()
         {
             await _productWriteRepository.AddRangeAsync(new()
             {
@@ -30,6 +31,13 @@ namespace UlukunShopAPI.API.Controllers
                 new() { Id = Guid.NewGuid(), Name = "Ürün-4", Price = 499, CreatedDate = DateTime.UtcNow, Stock = 14 }
             });
             await _productWriteRepository.SaveAsync();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(string id)
+        {
+            Product product=await _productReadRespository.GetByIdAsync(id);
+            return Ok(product);
         }
     }
 }
