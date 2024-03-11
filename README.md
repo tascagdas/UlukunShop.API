@@ -1,0 +1,1 @@
+11/march/2024 This project is need to be paused due to required private and controllable repository from education institution. After i finish project on another repository i will publish my shopping web site in here as well.
