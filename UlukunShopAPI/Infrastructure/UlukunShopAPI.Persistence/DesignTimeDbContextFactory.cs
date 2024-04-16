@@ -28,12 +28,11 @@ public class DesignTimeDbContextFactory:IDesignTimeDbContextFactory<UlukunAPIDbC
         
         
         
-        
-        // dbContextOptionsBuilder.UseNpgsql(Configuration.ConnectionString);  
+        //postgres icin
+        dbContextOptionsBuilder.UseNpgsql(Configuration.ConnectionString);  
         
         //SQLite için...
         // dbContextOptionsBuilder.UseSqlite(Configuration.ConnectionString);
-        dbContextOptionsBuilder.UseSqlite(Configuration.ConnectionString);
 
         
         

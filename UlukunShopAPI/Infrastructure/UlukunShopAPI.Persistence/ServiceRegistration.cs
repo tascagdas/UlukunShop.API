@@ -33,18 +33,18 @@ public static class ServiceRegistration
     {
         
         //Sqlite için alttaki.
-        services.AddDbContext<UlukunAPIDbContext>(options =>
-            options
-                .UseSqlite(services
-                    .BuildServiceProvider()
-                    .GetRequiredService<IConfiguration>()
-                    .GetConnectionString("SqliteConnection")));
+        // services.AddDbContext<UlukunAPIDbContext>(options =>
+        //     options
+        //         .UseSqlite(services
+        //             .BuildServiceProvider()
+        //             .GetRequiredService<IConfiguration>()
+        //             .GetConnectionString("SqliteConnection")));
         
         
         
         //Postgre için aşağıdaki...
-        // services.AddDbContext<UlukunAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString),
-        //     ServiceLifetime.Scoped);
+        services.AddDbContext<UlukunAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString),
+            ServiceLifetime.Scoped);
         
         
         
