@@ -43,6 +43,30 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.2, )"
@@ -64,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -102,6 +126,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -118,7 +152,75 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/UlukunShopAPI.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/UlukunShopAPI.Infrastructure.csproj",
+        "projectName": "UlukunShopAPI.Infrastructure",
+        "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/UlukunShopAPI.Infrastructure.csproj",
+        "packagesPath": "/Users/tascagdas/.nuget/packages/",
+        "outputPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tascagdas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Core/UlukunShopAPI.Application/UlukunShopAPI.Application.csproj": {
+                "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Core/UlukunShopAPI.Application/UlukunShopAPI.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.19.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.28, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -161,7 +263,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.57.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.2, )"
             },
@@ -204,7 +314,68 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.SignalR/UlukunShopAPI.SignalR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.SignalR/UlukunShopAPI.SignalR.csproj",
+        "projectName": "UlukunShopAPI.SignalR",
+        "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.SignalR/UlukunShopAPI.SignalR.csproj",
+        "packagesPath": "/Users/tascagdas/.nuget/packages/",
+        "outputPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.SignalR/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tascagdas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Core/UlukunShopAPI.Application/UlukunShopAPI.Application.csproj": {
+                "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Core/UlukunShopAPI.Application/UlukunShopAPI.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -234,8 +405,14 @@
               "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Core/UlukunShopAPI.Application/UlukunShopAPI.Application.csproj": {
                 "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Core/UlukunShopAPI.Application/UlukunShopAPI.Application.csproj"
               },
+              "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/UlukunShopAPI.Infrastructure.csproj": {
+                "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/UlukunShopAPI.Infrastructure.csproj"
+              },
               "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/UlukunShopAPI.Persistence.csproj": {
                 "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Persistence/UlukunShopAPI.Persistence.csproj"
+              },
+              "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.SignalR/UlukunShopAPI.SignalR.csproj": {
+                "projectPath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.SignalR/UlukunShopAPI.SignalR.csproj"
               }
             }
           }
@@ -250,6 +427,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.28, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -263,6 +444,22 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Serilog.Sinks.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -288,7 +485,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

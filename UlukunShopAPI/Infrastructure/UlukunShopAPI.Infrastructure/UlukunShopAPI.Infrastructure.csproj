@@ -10,4 +10,13 @@
       <ProjectReference Include="..\..\Core\UlukunShopAPI.Application\UlukunShopAPI.Application.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Services\Storage\AWS\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.28" />
+    </ItemGroup>
+
 </Project>
