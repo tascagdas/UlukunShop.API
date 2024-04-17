@@ -2,6 +2,7 @@ using System.Net;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using UlukunShopAPI.Application.Abstractions.Services;
 using UlukunShopAPI.Application.Consts;
 using UlukunShopAPI.Application.CustomAttributes;
 using UlukunShopAPI.Application.Enums;
@@ -23,10 +24,12 @@ namespace UlukunShopAPI.API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IProductService _productService;
         
-        public ProductsController(IMediator mediator)
+        public ProductsController(IMediator mediator, IProductService productService)
         {
             _mediator = mediator;
+            _productService = productService;
         }
 
         [HttpGet]
@@ -34,6 +37,12 @@ namespace UlukunShopAPI.API.Controllers
         {
             GetAllProductsQueryResponse response = await _mediator.Send(getAllProductsQueryRequest);
             return Ok(response);
+        }    
+        [HttpGet("qrcode/{productId}")]
+        public async Task<IActionResult> GetQrCodeOfPRoduct([FromRoute]string productId)
+        {
+            var data=await _productService.GenerateProductQrCodeAsync(productId);
+            return File(data,"image/png");
         }
 
         [HttpGet("{id}")]

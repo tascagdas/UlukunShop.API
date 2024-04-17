@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bMqqogc1x3OPGu4onBgq8lonOmO7OwpLKBnvhGNjlg1ElAGiR8mZD9zfVLJQxzN+c4GmfuhHa5b3BdRqyhz7bg==",
+  "dgSpecHash": "cBjGF24gRlpQqeC3yILAA6RPW4wFPBEZdBli/iBYvmc9FC8mIlKmqZF8xmrCQu2KSzXZBb/pibw4lAQdkII2cw==",
   "success": true,
   "projectFilePath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Infrastructure/UlukunShopAPI.Infrastructure/UlukunShopAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,7 @@
     "/Users/tascagdas/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/qrcoder/1.4.3/qrcoder.1.4.3.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",

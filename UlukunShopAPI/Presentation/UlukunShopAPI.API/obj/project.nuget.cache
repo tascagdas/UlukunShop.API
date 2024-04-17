@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f2bRYNhzTM9zZz6WyocQkBg5jnBSLnRFUqoBZlcp9U2bTrpYqjWQuHPZ52VfXPvGLbKXvwx8rjnA+yvH9+JNOg==",
+  "dgSpecHash": "5lAi8Bq4erQvZVUzEX1Z9voP0RUXoFiELZKSByJ8AjW32qvfgQtQmcCgTSI+qI1k8IwCwdMihrctWV2IEWnFYg==",
   "success": true,
   "projectFilePath": "/Users/tascagdas/Documents/GitHub/UlukunShop/UlukunShopAPI/Presentation/UlukunShopAPI.API/UlukunShopAPI.API.csproj",
   "expectedPackageFiles": [
@@ -168,6 +168,7 @@
     "/Users/tascagdas/.nuget/packages/nuget.projectmodel/6.3.1/nuget.projectmodel.6.3.1.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/nuget.protocol/6.3.1/nuget.protocol.6.3.1.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/nuget.versioning/6.3.1/nuget.versioning.6.3.1.nupkg.sha512",
+    "/Users/tascagdas/.nuget/packages/qrcoder/1.4.3/qrcoder.1.4.3.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/serilog/2.11.0/serilog.2.11.0.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/serilog.aspnetcore/6.0.1/serilog.aspnetcore.6.0.1.nupkg.sha512",
     "/Users/tascagdas/.nuget/packages/serilog.extensions.hosting/5.0.1/serilog.extensions.hosting.5.0.1.nupkg.sha512",
