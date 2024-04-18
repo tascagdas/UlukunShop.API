@@ -9,6 +9,7 @@ using UlukunShopAPI.Application.Enums;
 using UlukunShopAPI.Application.Features.Commands.Product.CreateProduct;
 using UlukunShopAPI.Application.Features.Commands.Product.DeleteProduct;
 using UlukunShopAPI.Application.Features.Commands.Product.UpdateProduct;
+using UlukunShopAPI.Application.Features.Commands.Product.UpdateStockWithQrCode;
 using UlukunShopAPI.Application.Features.Commands.ProductImageFile.DeleteProductImage;
 using UlukunShopAPI.Application.Features.Commands.ProductImageFile.MakeProductImageThumbnail;
 using UlukunShopAPI.Application.Features.Commands.ProductImageFile.UploadProductImage;
@@ -43,6 +44,13 @@ namespace UlukunShopAPI.API.Controllers
         {
             var data=await _productService.GenerateProductQrCodeAsync(productId);
             return File(data,"image/png");
+        }  
+        
+        [HttpPut("qrcode")]
+        public async Task<IActionResult> UpdateStockWithQrCode(UpdateStockWithQrCodeCommandRequest updateStockWithQrCodeCommandRequest)
+        {
+            UpdateStockWithQrCodeCommandResponse response = await _mediator.Send(updateStockWithQrCodeCommandRequest);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
