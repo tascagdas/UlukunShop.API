@@ -39,7 +39,7 @@ namespace UlukunShopAPI.API.Controllers
             return Ok(response);
         }    
         [HttpGet("qrcode/{productId}")]
-        public async Task<IActionResult> GetQrCodeOfPRoduct([FromRoute]string productId)
+        public async Task<IActionResult> GetQrCodeOfProduct([FromRoute]string productId)
         {
             var data=await _productService.GenerateProductQrCodeAsync(productId);
             return File(data,"image/png");
