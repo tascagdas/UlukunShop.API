@@ -31,7 +31,8 @@ public class GetAllProductsQueryHandler:IRequestHandler<GetAllProductsQueryReque
             p.Price,
             p.CreatedDate,
             p.UpdatedDate,
-            p.ProductImages
+            p.ProductImages,
+            p.Properties
         }).ToList();
         _logger.LogInformation("GetAllProducts calistirildi.");
         return new()
