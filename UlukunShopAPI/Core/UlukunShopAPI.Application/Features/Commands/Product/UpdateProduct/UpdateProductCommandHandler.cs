@@ -21,6 +21,7 @@ public class UpdateProductCommandHandler:IRequestHandler<UpdateProductCommandReq
         product.Name = request.Name;
         product.Stock = request.Stock;
         product.Price = request.Price;
+        product.Properties = request.Property;
         await _productWriteRepository.SaveAsync();
         return new();
     }
